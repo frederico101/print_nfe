@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(0, 139, 97)
+}
+#prod{
+   
+    color:blue;
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    height: 50px;
+    
+}
+.container{
+
+    height: 10rem;
+
+}
+#sub{
+    position: absolute;
+    top: 26%;
+    left: 45.5%;
+}
+h1{
+}
+footer{
+
+    top: 100px;
+
+}
