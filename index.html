@@ -16,40 +16,28 @@
 <title>Impresão de notas fiscais</title>
 </head>
 <body>
-
+   
  <div class="container w-100">
               <h1 class='text-center mt-4'> TSURT </h1>
              <h2 class='text-center'>CheckOut produtos </h2>
-     <input type="text" id="prod" required>
-     <button  class="btn btn-primary mt-4" id="sub">Imprimir nota</button>
 
+
+    <form action='../examples/getXml.php' action='GET'>
     
-     
-     <!--table class="table table-light" id='table'>
-         <thead class="thead-light">
-             <tr>
-                 <th>#</th>
-                 <th>NOME</th>
-                 <th>SOBRENOME</th>
-                 <th>CPF</th>
-             </tr>
-         </thead>
-         <tbody>
-             <tr>
-                 <td></td>
-             </tr>
-         </tbody>
-         <tfoot>
-             <tr>
-             <th>#</th>
-                 <th>NOME</th>
-                 <th>SOBRENOME</th>
-                 <th>CPF</th>
-             </tr>
-         </tfoot>
-     </table-->
-              
-            
+    <input type="text" id="prod" name="prod" required>
+    <button  type= 'submit' class="btn btn-success mt-4" name=''  id="print">Imprimir nota</button>
+    </form>
+
+     <button  class="btn btn-primary mt-4" id="reset">Resetar</button>
+     <!-- button  type="submit" class="btn btn-success mt-4" id="search">pesquisar</button-->
+    
+     <div class="card">
+        <div class="card-body">
+        
+      
+         </div>
+     </div>
+  <div class="span"></div>
              
              
        

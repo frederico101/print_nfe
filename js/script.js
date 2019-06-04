@@ -1,27 +1,53 @@
 $( document ).ready(function() {
     
-    $('#table').hide();
-    console.log( "ready!" );
-     
-    var produto = $('#prod').val();
-    $('#sub').click(function(){
-        
+    $('.card').hide();
     
 
+
+   $('#prod').on('keyup', function(){
+       
+       
+       
+          var pedido = $('#prod').val();
+          if(pedido){
+            $('.card').show();
+        
         $.ajax({
-        method: "POST",
-        url: "../examples/getXml.php",   //testaDanfe.php",
-        data: { produto }
-        })
-        .done(function( msg ) {
-            alert( "Data Saved: " + msg );
-           
-        });
+            method: "GET",
+            url: "./examples/search.php",
+            async: true,
+            //dataType: 'json',
+            data: { pedido }
+            })
+            .done(function( msg ) {
 
-      
-      
-     console.log("ajax reading"); 
+                obj = JSON.parse(msg);
+                 
+                $('.card-body').html( "Serie: "+ obj.serie + "<br>" + "Numero: "+obj.pedido );
+               
+              
+            });
+        }else{
 
-     }); //end of submit button
+            $('.card').hide();
+        }
+
+
+
+
+
+   }),$('#reset').on('click', function(){
+  
+      $('.card').hide();
+      $(':input')
+      .not(':button, :submit, :reset, :hidden')
+      .val('')
+
+})
+ 
+  
+
+   
+   
     
 });// end of main function

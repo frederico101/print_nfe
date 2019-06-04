@@ -17,5 +17,11 @@ src/NFe/Bloco/Transportador.php
 src/NFe/Bloco/Itens.php
 src/NFe/Bloco/Informacoes.php
 src/NFe/Bloco/Rodape.php
+php/teste/dados.php
+php/teste/imprimi.php
+php/teste/pedidos.php
+php/teste/testaarray.php
+php/teste/insertinDb.php
+examples/testes/testaDanfe.php
 
 

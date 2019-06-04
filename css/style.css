@@ -10,15 +10,28 @@ body{
     height: 50px;
     
 }
+
 .container{
 
     height: 10rem;
 
 }
-#sub{
+#search{
     position: absolute;
     top: 26%;
-    left: 45.5%;
+    left: 50.5%;
+}
+#print{
+    
+    position: absolute;
+    top: 26%;
+    left: 49.5%;
+
+}
+#reset{
+    position: absolute;
+    top: 26%;
+    left: 42%;
 }
 h1{
 }
@@ -26,4 +39,9 @@ footer{
 
     top: 100px;
 
+}
+.card{
+    
+    top: 90%;
+   
 }
