@@ -20,8 +20,9 @@ src/NFe/Bloco/Rodape.php
 php/teste/dados.php
 php/teste/imprimi.php
 php/teste/pedidos.php
-php/teste/testaarray.php
+php/teste/testarray.php
 php/teste/insertinDb.php
 examples/testes/testaDanfe.php
-
+/tests
+tests
 
